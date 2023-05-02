@@ -6,8 +6,23 @@ namespace Features_LambdaExpressions
     {
         static void Main(string[] args)
         {
-            var sample = new Sample();
-            sample.Test();
+            var delegateSample = new DelegateSample();
+            delegateSample.Test();
+
+            Console.WriteLine();
+
+            var actionAndFuncSample = new ActionAndFuncSample();
+            actionAndFuncSample.Test();
+
+            Console.WriteLine();
+
+            var expressionTreeSample = new ExpressionTreeSample();
+            expressionTreeSample.Test();
+
+            Console.WriteLine();
+
+            var eventSample = new EventSample();
+            eventSample.Test();
 
             Console.WriteLine();
             Console.WriteLine("Press any key to exit ...");
